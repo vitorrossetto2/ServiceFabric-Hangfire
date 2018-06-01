@@ -4,6 +4,15 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <IsServiceFabricServiceProject>True</IsServiceFabricServiceProject>
+    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HangFire.Core" Version="1.6.19" />
+    <PackageReference Include="HangFire.SqlServer" Version="1.6.19" />
+    <PackageReference Include="Microsoft.ServiceFabric" Version="6.1.480" />
+    <PackageReference Include="Microsoft.ServiceFabric.Data" Version="3.0.480" />
+    <PackageReference Include="Microsoft.ServiceFabric.Services" Version="3.0.480" />
+  </ItemGroup>
 
 </Project>
