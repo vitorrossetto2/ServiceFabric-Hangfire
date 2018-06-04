@@ -34,11 +34,20 @@ namespace BatchJob
         /// <param name="cancellationToken">Canceled when Service Fabric needs to shut down this service instance.</param>
         protected override async Task RunAsync(CancellationToken cancellationToken)
         {
-            GlobalConfiguration.Configuration.UseSqlServerStorage("connection_string");
+            GlobalConfiguration.Configuration.UseSqlServerStorage("<connection string>");
+    
+            //telling to Hangfire to run this method every minute
+            RecurringJob.AddOrUpdate(
+                () => Console.WriteLine("Recurring"),
+                Cron.MinuteInterval(1), queue: "recurring_queue");
 
-            using (var server = new BackgroundJobServer())
+            //creating a hangfire server for processing the batch job created above
+            using (var server = new BackgroundJobServer(new BackgroundJobServerOptions()
             {
-                Console.WriteLine("Hangfire Server started. Press any key to exit...");
+                Queues = new[] { "recurring_queue" }
+            }))
+            {
+                //keep the server running forever!
                 await Task.Delay(Timeout.Infinite, cancellationToken);
             }
         }

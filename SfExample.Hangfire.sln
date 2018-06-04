@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "SfExample.Hangfire", "SfExample.Hangfire\SfExample.Hangfire.sfproj", "{1CF6A036-7A67-4A7E-B023-A234B80D9BA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchJob", "BatchJob\BatchJob.csproj", "{A6EED0E9-0FEB-4BD4-9814-435B19737E72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchJob", "BatchJob\BatchJob.csproj", "{A6EED0E9-0FEB-4BD4-9814-435B19737E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{5C02EA1A-E124-48F6-8300-D90DAF2E93CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{A6EED0E9-0FEB-4BD4-9814-435B19737E72}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6EED0E9-0FEB-4BD4-9814-435B19737E72}.Release|x64.ActiveCfg = Release|Any CPU
 		{A6EED0E9-0FEB-4BD4-9814-435B19737E72}.Release|x64.Build.0 = Release|Any CPU
+		{5C02EA1A-E124-48F6-8300-D90DAF2E93CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C02EA1A-E124-48F6-8300-D90DAF2E93CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C02EA1A-E124-48F6-8300-D90DAF2E93CF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5C02EA1A-E124-48F6-8300-D90DAF2E93CF}.Debug|x64.Build.0 = Debug|Any CPU
+		{5C02EA1A-E124-48F6-8300-D90DAF2E93CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C02EA1A-E124-48F6-8300-D90DAF2E93CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C02EA1A-E124-48F6-8300-D90DAF2E93CF}.Release|x64.ActiveCfg = Release|Any CPU
+		{5C02EA1A-E124-48F6-8300-D90DAF2E93CF}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
